@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang | Arthae' Fashion</title>
+  <meta name="description" content="Keranjang belanja Arthae' Fashion dengan ringkasan pembayaran dan checkout.">
+  <link rel="stylesheet" href="css/keranjang.css">
+</head>
+
+<body data-page="cart">
+  <header class="site-header">
+    <a href="beranda.html" class="brand">Arthae'</a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="beranda.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a class="active" href="keranjang.html">Keranjang <span id="cartBadge">0</span></a>
+      <a href="#historySection">Riwayat</a>
+      <a href="admin.html">Admin</a>
+      <button class="nav-action" id="accountBtn" type="button">Login</button>
+      <button class="nav-action" id="langToggle" type="button">EN</button>
+      <a href="index.html">Keluar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Belanja</p>
+      <h2>Keranjang</h2>
+      <p>Atur jumlah produk, hapus item, lalu lanjutkan checkout.</p>
+    </section>
+    <div class="cart-layout">
+      <div id="cartItems" class="cart-items"></div>
+      <aside class="summary-card">
+        <p class="eyebrow">Ringkasan</p>
+        <h3>Total Pembayaran</h3>
+        <div class="summary-row"><span>Subtotal</span><strong id="subtotalText">Rp 0</strong></div>
+        <div class="summary-row"><span>Admin</span><strong id="adminText">Rp 0</strong></div>
+        <div class="summary-row"><span>Diskon</span><strong id="discountText">-Rp 0</strong></div>
+        <div class="summary-row total"><span>Total</span><strong id="totalText">Rp 0</strong></div>
+        <button id="checkoutBtn" class="primary-btn">Checkout Sekarang</button>
+        <button id="waCheckoutBtn" class="ghost-btn">Beli via WhatsApp</button>
+      </aside>
+    </div>
+    <section id="historySection" class="section-block">
+      <div class="section-title">
+        <p class="eyebrow">Riwayat</p>
+        <h2>Riwayat Transaksi</h2>
+      </div>
+      <div id="historyList" class="history-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Arthae'</h3>
+      <p>Prototype marketplace fashion untuk kebutuhan gaya harian modern.</p>
+    </div>
+    <div>
+      <h3>Navigasi</h3><a href="beranda.html">Beranda</a><a href="produk.html">Produk</a><a
+        href="keranjang.html">Keranjang</a>
+    </div>
+    <div>
+      <h3>Hubungi Kami</h3>
+      <p>Email: hello@Arthae'.test</p>
+      <p>WA: 0821-9000-2026</p>
+    </div>
+  </footer>
+
+  <div id="checkoutModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="close-btn" data-close="checkoutModal">&times;</button>
+      <form id="checkoutForm" class="checkout-form">
+        <p class="eyebrow">Checkout</p>
+        <h3>Data Pembeli</h3>
+        <input id="buyerName" type="text" placeholder="Nama lengkap" required>
+        <input id="buyerPhone" type="tel" placeholder="Nomor telepon" required>
+        <textarea id="buyerAddress" placeholder="Alamat lengkap" required></textarea>
+        <input id="buyerCity" type="text" placeholder="Kota" required>
+        <input id="buyerPostcode" type="text" placeholder="Kode pos" required>
+        <select id="paymentMethod" required>
+          <option value="">Pilih metode pembayaran</option>
+          <option value="Midtrans Virtual Account">Midtrans Virtual Account</option>
+          <option value="E-Wallet">E-Wallet</option>
+          <option value="Transfer Bank Manual">Transfer Bank Manual</option>
+        </select>
+        <button class="primary-btn" type="submit">Buat Pesanan</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card success-card">
+      <button class="close-btn" data-close="successModal">&times;</button>
+      <h3>Pesanan Berhasil</h3>
+      <p id="successText"></p>
+      <button class="primary-btn" data-close="successModal">Selesai</button>
+    </div>
+  </div>
+
+  <div id="accountModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card account-card">
+      <button class="close-btn" data-close="accountModal">&times;</button>
+      <form id="accountForm" class="checkout-form">
+        <p class="eyebrow">Akun Pembeli</p>
+        <h3>Login Pembeli</h3>
+        <input id="accountName" type="text" placeholder="Nama pembeli" required>
+        <input id="accountPhone" type="tel" placeholder="Nomor WhatsApp" required>
+        <button class="primary-btn" type="submit">Simpan Akun</button>
+        <button class="ghost-btn" id="logoutBtn" type="button">Keluar Akun</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
