@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Arthae' Fashion</title>
+  <meta name="description"
+    content="Beranda Arthae' Fashion dengan rekomendasi produk, tentang kami, review, dan navigasi belanja.">
+  <link rel="stylesheet" href="css/beranda.css">
+</head>
+
+<body data-page="home">
+  <header class="site-header">
+    <a href="beranda.html" class="brand">Arthae'</a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a class="active" href="beranda.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="keranjang.html">Keranjang <span id="cartBadge">0</span></a>
+      <a href="keranjang.html#historySection">Riwayat</a>
+      <a href="admin.html">Admin</a>
+      <button class="nav-action" id="accountBtn" type="button">Login</button>
+      <button class="nav-action" id="langToggle" type="button">EN</button>
+      <a href="index.html">Keluar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">New Season Collection</p>
+        <h2>Style Harian yang Ringan, Rapi, dan Percaya Diri.</h2>
+        <p>Temukan pilihan pakaian, sepatu, tas, dan aksesoris fashion dengan alur belanja yang mudah.</p>
+        <a class="primary-btn link-btn" href="produk.html">Mulai Belanja</a>
+      </div>
+      <div class="hero-media" aria-label="Kolase produk fashion">
+        <img src="image/Model.jpeg" alt="Model membawa tas belanja fashion">
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-title">
+        <p class="eyebrow">Rekomendasi</p>
+        <h2>Produk Pilihan</h2>
+      </div>
+      <div id="featuredGrid" class="product-grid"></div>
+    </section>
+
+    <section class="about-grid">
+      <div>
+        <p class="eyebrow">Tentang Kami</p>
+        <h2>Dari basic outfit sampai statement look.</h2>
+        <p>Arthae' adalah prototype toko fashion online yang membantu pengguna menemukan produk sesuai gaya, kategori,
+          dan budget. Website ini dibuat responsif untuk desktop dan mobile.</p>
+      </div>
+      <div class="stats-grid">
+        <article><strong>12+</strong><span>Produk Aktif</span></article>
+        <article><strong>4</strong><span>Kategori</span></article>
+        <article><strong>98%</strong><span>Kepuasan</span></article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-title">
+        <p class="eyebrow">Apa Kata Mereka</p>
+        <h2>Review Pelanggan</h2>
+      </div>
+      <div class="review-grid">
+        <article>
+          <div class="stars">5/5</div>
+          <p>Produk mudah dicari, tampilannya bersih, dan proses keranjangnya jelas.</p>
+          <strong>Nana</strong><span>Mahasiswa</span>
+        </article>
+        <article>
+          <div class="stars">5/5</div>
+          <p>Filter kategori dan harga membantu banget untuk pilih outfit sesuai kebutuhan.</p>
+          <strong>Riki</strong><span>Pekerja Kantoran</span>
+        </article>
+        <article>
+          <div class="stars">5/5</div>
+          <p>Checkout dummy-nya rapi dan cocok untuk simulasi website e-commerce.</p><strong>Sisi</strong><span>Content
+            Creator</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Arthae'</h3>
+      <p>Prototype marketplace fashion untuk kebutuhan gaya harian modern.</p>
+    </div>
+    <div>
+      <h3>Navigasi</h3><a href="beranda.html">Beranda</a><a href="produk.html">Produk</a><a
+        href="keranjang.html">Keranjang</a>
+    </div>
+    <div>
+      <h3>Hubungi Kami</h3>
+      <p>Email: hello@Arthae'.test</p>
+      <p>WA: 0821-9000-2026</p>
+    </div>
+  </footer>
+
+  <div id="detailModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="close-btn" data-close="detailModal">&times;</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+
+  <div id="accountModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card account-card">
+      <button class="close-btn" data-close="accountModal">&times;</button>
+      <form id="accountForm" class="checkout-form">
+        <p class="eyebrow">Akun Pembeli</p>
+        <h3>Login Pembeli</h3>
+        <input id="accountName" type="text" placeholder="Nama pembeli" required>
+        <input id="accountPhone" type="tel" placeholder="Nomor WhatsApp" required>
+        <button class="primary-btn" type="submit">Simpan Akun</button>
+        <button class="ghost-btn" id="logoutBtn" type="button">Keluar Akun</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
