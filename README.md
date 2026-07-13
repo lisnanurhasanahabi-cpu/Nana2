@@ -219,26 +219,29 @@ Screenshot yang sudah dimasukkan ke dalam proyek:
 
 | Halaman | Screenshot |
 | --- | --- |
-| Tampilan Awal | ![Tampilan Awal Desktop](<screenshot/Tampilan Awal _ Dekstop.png>) |
-| Beranda | ![Beranda Desktop](<screenshot/Beranda _ Dekstop.png>) |
-| Tentang Kami | ![Tentang Kami Desktop](<screenshot/Tentang Kami_Dekstop.png>) |
-| Review | ![Review Desktop](<screenshot/Review_Dekstop.png>) |
-| Produk | ![Produk Desktop](<screenshot/Produk_Dekstop.png>) |
-| Keranjang | ![Keranjang Desktop](<screenshot/Keranjang_Dekstop.png>) |
-| Keranjang Alternatif | ![Keranjang Desktop Alternatif](<screenshot/Keranjang_Dekstop (2).png>) |
-| Checkout | ![Checkout Desktop](<screenshot/Chekout_Dekstop.png>) |
-| Admin | ![Admin Desktop](<screenshot/Admin_Dekstop.png>) |
+| Tampilan Awal | ![Tampilan Awal Desktop](<screenshot/Tampilan Awal_desktop.png>) |
+| Beranda | ![Beranda Desktop](<screenshot/Beranda_desktop.png>) |
+| Tentang Kami | ![Tentang Kami Desktop](<screenshot/Tentang Kami_desktop.png>) |
+| Review Pelanggan | ![Review Pelanggan Desktop](<screenshot/Review Pelangan_desktop.png>) |
+| Produk | ![Produk Desktop](<screenshot/Produk_desktop.png>) |
+| Keranjang | ![Keranjang Desktop](<screenshot/Keranjang_desktop.png>) |
+| Riwayat Transaksi | ![Riwayat Transaksi Desktop](<screenshot/Riwayat Transaksi_desktop.png>) |
+| Akun Pembeli | ![Akun Pembeli Desktop](<screenshot/Akun Pembeli_desktop.png>) |
+| Dashboard Admin | ![Dashboard Admin Desktop](<screenshot/Dasbord Admin_desktop.png>) |
 
 ### Tampilan Mobile
 
 | Halaman | Screenshot |
 | --- | --- |
-| Tampilan Awal | ![Tampilan Awal Mobile](<screenshot/Tampilan Awal_Mobile.jpeg>) |
-| Beranda | ![Beranda Mobile](<screenshot/Beranda_Mobile.jpeg>) |
-| Produk | ![Produk Mobile](<screenshot/Produk_Mobile.jpeg>) |
-| Keranjang | ![Keranjang Mobile](<screenshot/Keranjang_Mobile.jpeg>) |
-| Admin | ![Admin Mobile](<screenshot/Admin_Mobile.jpeg>) |
-| Admin Tambah Produk | ![Admin Tambah Produk Mobile](<screenshot/Admin Tambah Produk_Mobile.jpeg>) |
+| Tampilan Awal | ![Tampilan Awal Mobile](<screenshot/Tampilan Awal_mobile.jpeg>) |
+| Beranda | ![Beranda Mobile](<screenshot/Beranda_mobile.jpeg>) |
+| Tentang Kami | ![Tentang Kami Mobile](<screenshot/Tentang Kami_mobile.jpeg>) |
+| Review Pelanggan | ![Review Pelanggan Mobile](<screenshot/Review Pelanggan_mobile.jpeg>) |
+| Produk | ![Produk Mobile](<screenshot/Produk_mobile.jpeg>) |
+| Keranjang | ![Keranjang Mobile](<screenshot/Keranjang_mobile.jpeg>) |
+| Riwayat Transaksi | ![Riwayat Transaksi Mobile](<screenshot/Riwayat transaksi_mobile.jpeg>) |
+| Akun Pembeli | ![Akun Pembeli Mobile](<screenshot/Akun Pembeli_mobile.jpeg>) |
+| Dashboard Admin | ![Dashboard Admin Mobile](<screenshot/Dasbord Admin_mobile.jpeg>) |
 
 ## Rencana Commit Git
 
